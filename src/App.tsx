@@ -1,5 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login/Login';
+import AppRoutes from "./routes/AppRoutes";
 import { setupNotification } from "./components/Notification/Notification";
 
 function App() {
@@ -8,11 +7,7 @@ function App() {
   return (
     <>
       {notificationHolder}
-      <Routes>
-        <Route path="/" element={<Login />} />
-
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+      <AppRoutes />
     </>
   );
 }

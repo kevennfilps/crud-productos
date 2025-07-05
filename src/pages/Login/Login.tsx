@@ -3,11 +3,14 @@ import { Form, Input, Button, Typography } from "antd";
 import styles from "./Login.module.scss";
 import { login } from "../../api/authService";
 import { notify } from "../../components/Notification/Notification";
+import { useNavigate } from "react-router-dom";
 
 const { Title } = Typography;
 
 export default function Login() {
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+    
 
     const onFinish = async (values: any) => {
         setLoading(true);
@@ -17,7 +20,7 @@ export default function Login() {
                 localStorage.setItem("user", JSON.stringify(user));
                 notify("success", "Login realizado", `Bem-vindo(a), ${user.username}!`);
                 setTimeout(() => {
-                    window.location.href = "/produtos";
+                    navigate("/main");
                 }, 1000);
             } else {
                 notify("error", "Login inválido", "Usuário ou senha inválidos.");
