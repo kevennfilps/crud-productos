@@ -3,6 +3,7 @@ $bg-dark: #2c2c32;
 
 .login-root {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   background: $bg-dark url('/background.svg') no-repeat center center fixed;
   background-size: cover;
@@ -14,69 +15,101 @@ $bg-dark: #2c2c32;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(44,44,50,0.96);
-  min-width: 340px;
-}
+  background: transparent;
 
-.logo {
-  margin-bottom: 24px;
-}
+  .logo {
+    width: 180px;
+    margin-bottom: 32px;
+  }
 
-.login-title {
-  color: #fff;
-  letter-spacing: 1px;
-  margin-top: 16px;
+  .login-title {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    margin-top: 24px;
+  }
 }
 
 .login-right {
-  flex: 1.5;
+  flex: 2;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 0 32px;
+  min-width: 400px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.login-form-area {
+  width: 100%;
+  max-width: 520px;
 }
 
 .login-welcome {
-  color: #fff;
-  margin-bottom: 32px;
+  color: #FFFFFF !important;
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
 }
 
 .login-form {
-  background: rgba(20,20,22,0.70);
-  border-radius: 10px;
-  padding: 40px 32px 32px 32px;
-  max-width: 450px;
-  margin: 0 auto;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 
-// Customizações AntD dentro do módulo
 :global {
   .ant-form-item-label > label {
     color: $orange !important;
+    font-weight: 500;
+    font-size: 16px;
   }
   .ant-input, .ant-input-password {
-    background: #23232a;
+    background: #23232a !important;
     color: #fff;
     border-radius: 8px;
-    border: 1px solid #393949;
+    border: 2px solid #393949;
+    font-size: 17px;
   }
   .ant-input::placeholder, .ant-input-password input::placeholder {
     color: #aaa;
+    font-size: 15px;
+  }
+}
+
+.login-btn {
+  background: $orange !important;
+  border-color: $orange !important;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 9px;
+  margin-top: 8px;
+  height: 54px;
+  transition: background 0.2s;
+  &:hover, &:focus {
+    background: darken($orange, 10%) !important;
+    border-color: darken($orange, 10%) !important;
   }
 }
 
 @media (max-width: 900px) {
   .login-root {
     flex-direction: column;
+    align-items: center;
   }
   .login-left, .login-right {
     min-width: unset;
     width: 100%;
-    padding: 32px 16px;
-  }
-  .login-form {
-    max-width: 100%;
+    justify-content: center;
     padding: 32px 8px;
+  }
+  .login-form-area {
+    margin-left: 0;
+    max-width: 95vw;
   }
 }
