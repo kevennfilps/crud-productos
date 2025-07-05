@@ -1,0 +1,82 @@
+$orange: #ff6500;
+$bg-dark: #2c2c32;
+
+.login-root {
+  min-height: 100vh;
+  display: flex;
+  background: $bg-dark url('/background.svg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(44,44,50,0.96);
+  min-width: 340px;
+}
+
+.logo {
+  margin-bottom: 24px;
+}
+
+.login-title {
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 16px;
+}
+
+.login-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.login-welcome {
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.login-form {
+  background: rgba(20,20,22,0.70);
+  border-radius: 10px;
+  padding: 40px 32px 32px 32px;
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+// Customizações AntD dentro do módulo
+:global {
+  .ant-form-item-label > label {
+    color: $orange !important;
+  }
+  .ant-input, .ant-input-password {
+    background: #23232a;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #393949;
+  }
+  .ant-input::placeholder, .ant-input-password input::placeholder {
+    color: #aaa;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-root {
+    flex-direction: column;
+  }
+  .login-left, .login-right {
+    min-width: unset;
+    width: 100%;
+    padding: 32px 16px;
+  }
+  .login-form {
+    max-width: 100%;
+    padding: 32px 8px;
+  }
+}
