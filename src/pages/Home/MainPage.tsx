@@ -19,7 +19,7 @@ export default function MainPage() {
         onLogout={handleLogout}
         logo={<img src="/logo.png" alt="Logo" style={{ width: 100 }} />}
       />
-      <div style={{ paddingTop: 72, padding: 24 }}>
+      <div className={styles.content}>
         <ProductList />
       </div>
     </div>

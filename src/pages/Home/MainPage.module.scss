@@ -5,4 +5,10 @@ $bg-dark: #2c2c32;
   min-height: 100vh;
   background: $bg-dark url('/fundo.png') no-repeat center center fixed;
   background-size: cover;
+  overflow: auto;
+}
+
+.content {
+  margin-top: 72px;
+  padding: 45px 24px 24px 24px;
 }
