@@ -24,8 +24,8 @@ const DeleteProductModal: React.FC<DeleteProductModalProps> = ({
     centered
     closable
     width={500}
-    destroyOnClose
-    bodyStyle={{ padding: 28 }}
+    destroyOnHidden
+    styles={{ body: { padding: 28 } }}
   >
     <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 10 }}>
       Excluir produto:

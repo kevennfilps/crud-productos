@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProductFormModal.module.scss"; // crie um SCSS nesse padrão
+import styles from "./ProductFormModal.module.scss";
 import { Modal } from "antd";
 
 interface ProductFormModalProps {
@@ -64,8 +64,8 @@ const ProductFormModal: React.FC<ProductFormModalProps> = ({
       title={<span className={styles.title}>{title}</span>}
       width={800}
       style={{ border: "3px solid #ff7900", borderRadius: 12}}
-      destroyOnClose
-      bodyStyle={{ padding: 40 }}
+      destroyOnHidden
+      styles={{ body: { padding: 40 } }}
     >
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
