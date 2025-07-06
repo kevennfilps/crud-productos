@@ -1,20 +1,21 @@
 import React from "react";
-import { Dropdown, Space } from "antd";
-import { LogoutOutlined, UserOutlined } from "@ant-design/icons";
+import { Avatar, Dropdown} from "antd";
+import { DownOutlined, LogoutOutlined } from "@ant-design/icons";
 import styles from "./Header.module.scss";
 
 interface HeaderProps {
   userName: string;
-  onLogout: () => void;
+  onRequestLogout: () => void;
   logo: React.ReactNode;
+  avatarUrl?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ userName, onLogout, logo }) => {
+const Header: React.FC<HeaderProps> = ({ userName, onRequestLogout, logo, avatarUrl  }) => {
   const menuItems = [
     {
       key: 'logout',
       label: (
-        <span onClick={onLogout} style={{ display: "flex", alignItems: "center" }}>
+        <span onClick={onRequestLogout} style={{ display: "flex", alignItems: "center" }}>
           <LogoutOutlined style={{ marginRight: 8 }} />
           Sair
         </span>
@@ -27,10 +28,9 @@ const Header: React.FC<HeaderProps> = ({ userName, onLogout, logo }) => {
       <div className={styles.logo}>{logo}</div>
       <Dropdown menu={{ items: menuItems }} placement="bottomRight" trigger={["click"]}>
         <div className={styles.userMenu} tabIndex={0} role="button">
-          <Space>
-            <UserOutlined />
-            {userName}
-          </Space>
+          <Avatar src={avatarUrl || "/user-avatar.png"} size={36} />
+          <span className={styles.userName}>{userName}</span>
+          <DownOutlined className={styles.orangeArrow} />
         </div>
       </Dropdown>
     </header>

@@ -13,7 +13,6 @@ $bg-dark: #2c2c32;
   top: 0;
   left: 0;
   padding: 0 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   z-index: 100;
 }
 
@@ -29,10 +28,24 @@ $bg-dark: #2c2c32;
   cursor: pointer;
   font-weight: 500;
   user-select: none;
-  padding: 0 12px;
+  gap: 12px;
+  background: transparent;
+  padding: 6px 16px 6px 8px;
   border-radius: 20px;
   transition: background .2s;
   &:hover {
-    background: #f0f0f0;
+    background: #222;
   }
+}
+
+.userName {
+  margin-left: 8px;
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+.orangeArrow {
+  color: $orange;
+  font-size: 18px;
+  margin-left: 4px;
 }
