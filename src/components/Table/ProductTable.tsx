@@ -4,6 +4,7 @@ import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import type { ColumnsType } from "antd/es/table";
 import { type Product } from "../../api/products";
 import styles from './ProductTable.module.scss';
+import { CATEGORIES } from "../../constants/categories";
 
 interface ProductTableProps {
   products: Product[];
@@ -22,7 +23,7 @@ const ProductTable: React.FC<ProductTableProps> = ({
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const categoryFilters = Array.from(new Set(products.map((p) => p.category))).map((cat) => ({
+  const categoryFilters = CATEGORIES.map((cat) => ({
     text: cat,
     value: cat,
   }));

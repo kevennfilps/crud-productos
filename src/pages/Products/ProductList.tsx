@@ -7,13 +7,7 @@ import ProductFormModal, { type ProductFormFields } from "../../components/Produ
 import * as productApi from "../../api/products";
 import { notify } from "../../components/Notification/Notification";
 import DeleteProductModal from "../../components/Delete/DeleteProductModal";
-
-const CATEGORIES = [
-  "category 1",
-  "category 2",
-  "category 3",
-  "category 4",
-];
+import { CATEGORIES } from "../../constants/categories";
 
 export interface Product extends ProductFormFields {
   id: string;
@@ -44,9 +38,9 @@ const ProductList: React.FC = () => {
   }, []);
 
   const filteredProducts = products.filter((p) =>
-    p.name.toLowerCase().includes(search.toLowerCase())
+    p.name.toLowerCase().includes(search.toLowerCase()) ||
+    p.description?.toLowerCase().includes(search.toLowerCase())
   );
-
   function handleEditProduct(product: Product) {
     setEditingProduct(product);
     setModalVisible(true);

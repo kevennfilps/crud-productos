@@ -22,8 +22,8 @@ const ProductToolbar: React.FC<ProductToolbarProps> = ({ onAdd, onSearch, search
                 value={searchValue}
                 onChange={e => onSearch(e.target.value)}
                 onSearch={onSearch}
-                placeholder="Pesquisar produto..."
-                width={220}
+                placeholder="Pesquisar produto ou descrição"
+                width={279}
             />
             <CustomAddButton onClick={onAdd} />
         </div>

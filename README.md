@@ -6,8 +6,8 @@ Aplicação desenvolvida como parte de um teste técnico de Frontend, com o obje
 
 ## 🚀 Deploy
 
-Acesse o projeto publicado em produção:  
-
+Acesse o projeto publicado em produção:
+[https://crud-produtos-liard.vercel.app/](https://crud-produtos-liard.vercel.app/)
 
 ---
 
@@ -62,6 +62,8 @@ CRUD-PRODUCTOS/
 │   │   ├── Products/
 │   │   ├── Search/
 │   │   └── Table/
+│   ├── constants/
+│   │   ├── Categories/
 │   ├── pages/
 │   │   ├── Home/
 │   │   ├── Login/
@@ -152,9 +154,9 @@ CRUD-PRODUCTOS/
 
 ## 🌐 Deploy
 
-- O deploy foi realizado utilizando Vercel (ou Netlify/Heroku).
+- O deploy foi realizado utilizando Vercel.
 -Confira em:
-``` https://seu-link-deploy.vercel.app ```
+``` https://crud-produtos-liard.vercel.app/ ```
 
 ## 👤 Autor
 
