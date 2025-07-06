@@ -41,47 +41,40 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 
 ## 📁 Estrutura de Pastas
 
-<details> <summary><strong>CRUD-PRODUCTOS/</strong></summary>
-├── <details><summary>public/</summary>
-│ ├── fundo.png
-│ ├── logo.png
-│ ├── seta para baixo.svg
-│ └── vite.svg
-  </details>
-├── <details> <summary>src/</summary>
-│ ├── <details> <summary>api/</summary>
-│ │ ├── authService.ts
-│ │ └── products.ts
-      </details>    
-│ ├── <details> <summary>assets/</summary>
-│ │ └── react.svg
-  </details>
-│ ├── <details> <summary>components/</summary></details>
-│ │ ├── Button/
-│ │ ├── Delete/
-│ │ ├── Header/
-│ │ ├── Notification/
-│ │ ├── Products/
-│ │ ├── Search/
-│ │ └── Table/
-    </details>
-│ ├── <details> <summary>pages/</summary>
-│ │ ├── Home/
-│ │ └── Login/
-│ │ └── Products/
-    </details>
-│ ├── <details> <summary>routes/</summary>
-│ │ └── AppRoutes.tsx
-    </details>
-│ ├── <details> <summary>utils/</summary>
-│ │ └── getUserFromStorage.ts
-    </details>
-│ ├── App.css
-│ ├── App.tsx
-│ ├── index.css
-│ ├── main.tsx
-│ └── vite-env.d.ts
-</details>
+```
+CRUD-PRODUCTOS/
+├── public/
+│   ├── fundo.png
+│   ├── logo.png
+│   ├── seta para baixo.svg
+│   └── vite.svg
+├── src/
+│   ├── api/
+│   │   ├── authService.ts
+│   │   └── products.ts
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── Button/
+│   │   ├── Delete/
+│   │   ├── Header/
+│   │   ├── Notification/
+│   │   ├── Products/
+│   │   ├── Search/
+│   │   └── Table/
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Login/
+│   │   └── Products/
+│   ├── routes/
+│   │   └── AppRoutes.tsx
+│   ├── utils/
+│   │   └── getUserFromStorage.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
@@ -92,7 +85,7 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
-</details>
+```
 
 ---
 
