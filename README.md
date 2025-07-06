@@ -42,17 +42,20 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 ## 📁 Estrutura de Pastas
 
 <details> <summary><strong>CRUD-PRODUCTOS/</strong></summary>
-├── <details><summary>public/</summary></details>
+├── <details><summary>public/</summary>
 │ ├── fundo.png
 │ ├── logo.png
 │ ├── seta para baixo.svg
 │ └── vite.svg
+  </details>
 ├── <details> <summary>src/</summary>
-│ ├── api/
+│ ├── <details> <summary>api/</summary>
 │ │ ├── authService.ts
 │ │ └── products.ts
-│ ├── <details> <summary>assets/</summary></details>
+      </details>    
+│ ├── <details> <summary>assets/</summary>
 │ │ └── react.svg
+  </details>
 │ ├── <details> <summary>components/</summary></details>
 │ │ ├── Button/
 │ │ ├── Delete/
@@ -61,14 +64,18 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 │ │ ├── Products/
 │ │ ├── Search/
 │ │ └── Table/
-│ ├── <details> <summary>pages/</summary></details>
+    </details>
+│ ├── <details> <summary>pages/</summary>
 │ │ ├── Home/
 │ │ └── Login/
 │ │ └── Products/
-│ ├── <details> <summary>routes/</summary></details>
+    </details>
+│ ├── <details> <summary>routes/</summary>
 │ │ └── AppRoutes.tsx
-│ ├── <details> <summary>utils/</summary></details>
+    </details>
+│ ├── <details> <summary>utils/</summary>
 │ │ └── getUserFromStorage.ts
+    </details>
 │ ├── App.css
 │ ├── App.tsx
 │ ├── index.css
