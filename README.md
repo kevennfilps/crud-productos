@@ -42,19 +42,18 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 ## 📁 Estrutura de Pastas
 
 <details> <summary><strong>CRUD-PRODUCTOS/</strong></summary>
-
-├── public/
+├── <details><summary>public/</summary></details>
 │ ├── fundo.png
 │ ├── logo.png
 │ ├── seta para baixo.svg
 │ └── vite.svg
-├── src/
+├── <details> <summary>src/</summary>
 │ ├── api/
 │ │ ├── authService.ts
 │ │ └── products.ts
-│ ├── assets/
+│ ├── <details> <summary>assets/</summary></details>
 │ │ └── react.svg
-│ ├── components/
+│ ├── <details> <summary>components/</summary></details>
 │ │ ├── Button/
 │ │ ├── Delete/
 │ │ ├── Header/
@@ -62,19 +61,20 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 │ │ ├── Products/
 │ │ ├── Search/
 │ │ └── Table/
-│ ├── pages/
+│ ├── <details> <summary>pages/</summary></details>
 │ │ ├── Home/
 │ │ └── Login/
 │ │ └── Products/
-│ ├── routes/
+│ ├── <details> <summary>routes/</summary></details>
 │ │ └── AppRoutes.tsx
-│ ├── utils/
+│ ├── <details> <summary>utils/</summary></details>
 │ │ └── getUserFromStorage.ts
 │ ├── App.css
 │ ├── App.tsx
 │ ├── index.css
 │ ├── main.tsx
 │ └── vite-env.d.ts
+</details>
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
