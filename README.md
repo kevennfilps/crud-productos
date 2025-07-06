@@ -43,37 +43,37 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 
 CRUD-PRODUCTOS/
 ├── public/
-│   ├── fundo.png
-│   ├── logo.png
-│   ├── seta para baixo.svg
-│   └── vite.svg
+│ ├── fundo.png
+│ ├── logo.png
+│ ├── seta para baixo.svg
+│ └── vite.svg
 ├── src/
-│   ├── api/
-│   │   ├── authService.ts
-│   │   └── products.ts
-│   ├── assets/
-│   │   └── react.svg
-│   ├── components/
-│   │   ├── Button/
-│   │   ├── Delete/
-│   │   ├── Header/
-│   │   ├── Notification/
-│   │   ├── Products/
-│   │   ├── Search/
-│   │   └── Table/
-│   ├── pages/
-│   │   ├── Home/
-│   │   └── Login/
-│   │   └── Products/
-│   ├── routes/
-│   │   └── AppRoutes.tsx
-│   ├── utils/
-│   │   └── getUserFromStorage.ts
-│   ├── App.css
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
+│ ├── api/
+│ │ ├── authService.ts
+│ │ └── products.ts
+│ ├── assets/
+│ │ └── react.svg
+│ ├── components/
+│ │ ├── Button/
+│ │ ├── Delete/
+│ │ ├── Header/
+│ │ ├── Notification/
+│ │ ├── Products/
+│ │ ├── Search/
+│ │ └── Table/
+│ ├── pages/
+│ │ ├── Home/
+│ │ └── Login/
+│ │ └── Products/
+│ ├── routes/
+│ │ └── AppRoutes.tsx
+│ ├── utils/
+│ │ └── getUserFromStorage.ts
+│ ├── App.css
+│ ├── App.tsx
+│ ├── index.css
+│ ├── main.tsx
+│ └── vite-env.d.ts
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
@@ -84,7 +84,6 @@ CRUD-PRODUCTOS/
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
-
 ---
 
 ## 📝 Funcionalidades
