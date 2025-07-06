@@ -41,7 +41,8 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 
 ## 📁 Estrutura de Pastas
 
-CRUD-PRODUCTOS/
+<details> <summary><strong>CRUD-PRODUCTOS/</strong></summary>
+
 ├── public/
 │ ├── fundo.png
 │ ├── logo.png
@@ -84,6 +85,8 @@ CRUD-PRODUCTOS/
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+</details>
+
 ---
 
 ## 📝 Funcionalidades
