@@ -42,7 +42,7 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 - [TypeScript](https://www.typescriptlang.org/)
 - [Ant Design (AntD)](https://ant.design/) para componentes de UI e estilização rápida
 - [Axios](https://axios-http.com/) para requisições HTTP
-- [MockAPI](https://mockapi.io/) ou serviço similar para simulação dos dados
+- [MockAPI](https://mockapi.io/) serviço similar para simulação dos dados
 - Estilização com CSS e SCSS Modules
 
 ---
