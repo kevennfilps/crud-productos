@@ -42,7 +42,7 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 - [TypeScript](https://www.typescriptlang.org/)
 - [Axios](https://axios-http.com/) para requisições HTTP
 - [MockAPI](https://mockapi.io/) ou serviço similar para simulação dos dados
-- Estilização com CSS Modules, Styled-components ou similar
+- Estilização com CSS e SCSS Modules
 
 ---
 
