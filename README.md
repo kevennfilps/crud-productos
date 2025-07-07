@@ -24,6 +24,13 @@ O projeto consiste em um **CRUD de Produtos** com as seguintes funcionalidades p
 A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.io/)), mas pode ser adaptada facilmente para qualquer backend RESTful.
 
 - **Login**: A tela de login utiliza a api do mockapi[https://6869635a2af1d945cea1c907.mockapi.io/api/v1/users]
+- O usuário e senha para acessar a aplicação:
+
+```bash
+  login: keven.aguiar ou admin
+  senha: 1234
+```
+
 - **Crud Completo**: Utiliza a api mockapi[https://6869635a2af1d945cea1c907.mockapi.io/api/v1/products]
 
 ---
