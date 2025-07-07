@@ -40,9 +40,15 @@ A aplicação utiliza uma **API mock** (por exemplo, [MockAPI](https://mockapi.i
 - [React 19](https://react.dev/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Ant Design (AntD)](https://ant.design/) para componentes de UI e estilização rápida
 - [Axios](https://axios-http.com/) para requisições HTTP
 - [MockAPI](https://mockapi.io/) ou serviço similar para simulação dos dados
 - Estilização com CSS e SCSS Modules
+
+---
+
+### 💎 Ant Design (AntD)
+A biblioteca [Ant Design](https://ant.design/) foi utilizada para construir rapidamente componentes de interface modernos e responsivos, como tabelas, formulários, modais e notificações. Isso garantiu agilidade no desenvolvimento e uma experiência de usuário consistente.
 
 ---
 
